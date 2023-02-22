@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time and Space</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.easycam.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="class.js"></script>
+  <script language="javascript" type="text/javascript" src="final.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style.
+  You might only need one of these values set. -->
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="slider-container">
+        <div id="time-slider-container">
+          <p>Time</p>
+          <input type="range" min="0" max="60" value="30" step="1" class="slider" id="time-slider" onmouseup="resetSketch()">
+        </div>
+        <div id="space-slider-container">
+          <p>Space</p>
+          <input type="range" min="0" max="2" value="0.75" step="0.01" class="slider" id="space-slider" oninput="spaceSliderChange()">
+        </div>
+      </div>
+      <div class="text-container">
+        <textarea name="textInput" id="textInput" cols="30" rows="10">Enter your own text here.</textarea>
+      </div>
+      <div class="buttons">
+        <div id="activate-button">
+          <!-- <input type="button" value="Reload" onclick="resetSketch()"> -->
+        </div>
+        <div class="buttons-container">
+          <input type="button" value="Reload" onclick="resetSketch()"><input type="color" value="#ffffff" id="backgroundColor"><input type="color" value="#000000" id="textColor">
+        </div>
+    </div>
+      
+      
+
+    </div>
+  </body>
+  </html>

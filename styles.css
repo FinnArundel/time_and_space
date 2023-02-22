@@ -1,0 +1,139 @@
+* { 
+    padding: 0; 
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+} 
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+    
+ 
+.container {
+    position: fixed;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 500px;
+}
+
+.slider-container {
+    padding: 30px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+#time-slider-container {
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 20px;
+}
+
+#space-slider-container {
+    display: flex;
+    flex-direction:row;
+}
+
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 36px;
+    text-align: left; 
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 62%;
+    /* margin-left: 30px; */
+    position: absolute;
+    margin-left: 130px;
+
+    
+}
+
+script {
+    height:100%;
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; 
+  }
+
+
+input[type=range]::-webkit-slider-thumb {
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+    background: #000000;
+    cursor: pointer;
+    margin-top: -2px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid #010101;
+
+  }
+
+input[type=button] {
+    background-color: white;
+    padding: 8px 40px;
+    text-decoration: none;
+    font-size: 36px;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper{
+    padding:0;
+  }
+
+input[type=color]:nth-child(2)::-webkit-color-swatch{
+    border: 2px black solid;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}  
+
+input[type=color]:nth-child(3)::-webkit-color-swatch{
+    border: 2px black solid;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: none;
+}  
+
+input[type="color"] {
+	width: 100%;
+	height: 60px;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
