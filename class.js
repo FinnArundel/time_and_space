@@ -36,7 +36,7 @@ class NodePoint {
 
         textAlign (CENTER);
         noStroke();
-        textFont (helvetica, 36);
+        textFont (helvetica, 18);
         
 
         push();
