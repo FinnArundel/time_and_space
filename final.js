@@ -42,15 +42,10 @@ function setup() {
 function draw() {
   background (document.getElementById("backgroundColor").value);
 
-  let spin = radians(frameCount) *0.1;
+  let spin = radians(frameCount) *0.15;
   translate (windowWidth/25,0);
   rotateY (-spin);
 
-  if (mouseIsPressed === true) {
-    cursor('NONE');
-  } else {
-    cursor('grab');
-  }
  
   node[0].connect();
 
