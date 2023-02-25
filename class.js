@@ -41,7 +41,7 @@ class NodePoint {
 
         push();
         translate (this.x, this.y, this.z);
-        let spin = radians(frameCount) *0.1;
+        let spin = radians(frameCount) *0.15;
         rotateY (spin);
         text(words[count], 0, 0);
         pop();
